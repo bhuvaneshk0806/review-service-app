@@ -3,6 +3,7 @@ import AppHeader from './components/AppHeader/AppHeader';
 import UserDetails from './components/UserDetails/UserDetails';
 import QuestionHeader from './components/QuestionHeaders/QuestionHeader';
 import Questions from './components/Questions/Questions';
+import data from './data/data.json';
 
 
 class App extends Component {
@@ -21,11 +22,12 @@ class App extends Component {
   }
   render () {
     return (
-      <div>
+      <div style={{border:"1px solid aqua",width:'100%', height:"100%",margin:"10px"}}>
         <AppHeader title={this.state.title}></AppHeader>
         <UserDetails userDetails={this.state.userDetails}/>
         <QuestionHeader ratingSummary={this.state.ratingSummary}/>
-        <Questions/>
+        <Questions data={data}/>
+        <button></button>
       </div>
     );
   }

@@ -2,7 +2,7 @@ import React from 'react';
 
 const userDetails = (props) => (
     <div stye={{
-        border:"1px solid black",alignItems:"center"
+        border:"1px solid black",alignItems:"center",marginLeft:"150px"
     }}>
         <table style={{
             border:"3px solid black",alignItems:"center",width:"600px",height:"100px"
